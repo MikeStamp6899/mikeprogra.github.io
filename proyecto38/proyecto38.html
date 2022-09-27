@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<title>Suma de cada numero que ingresas</title>
+	<meta charset="utf-8" />
+</head>
+<body>
+	<script>
+		//Se declaran las variables
+        var suma = 0;
+
+        //Se crea el bucle para introducir números. Si no es un número o se detiene, se devuelve la suma de todos los números ingresados
+        do{
+            var numero = prompt("Por favor, introduce un numero:");
+
+        //Si lo ingresado es un número, se pasa a Integer y se agrega a la variable suma
+            if (Number(numero) == numero) {
+                numero = Number(numero);
+                suma = suma + numero;
+            } //Si no es un número, se alerta de que lo ingresado es incorrecto
+            else {
+                if (numero != undefined) {
+                    alert(numero + " No es un numero");
+                }
+            }
+        } while(numero!= undefined);
+            document.write("La suma de todos los numeros es" + suma);
+	</script>
+</body>
+</html>

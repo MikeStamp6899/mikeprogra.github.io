@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<title>Contador de Vocales</title>
+	<meta charset="utf-8" />
+</head>
+<body>
+	<script>
+		//Se declaran las variables
+        var caracteres;
+        var contador = 0;
+        var texto = prompt("Introduce un texto, por favor");
+        var numerocarac = texto.length;
+        texto = texto.toUpperCase();
+
+        //Se crea un bucle for para leer el número de carácteres y las veces en las que  hay vocales
+        for (i = 0; i < numerocarac; i++) {
+            caracteres = texto.charAt(i);
+            if ((caracteres == "A") || (caracteres == "E") || (caracteres == "I") || (caracteres == "O") || (caracteres == "U")) {
+                contador++;
+            }
+        }
+        
+        //Se devuelve el resultado
+        document.write("Numero de vocales: " + contador);
+	</script>
+</body>
+</html>
